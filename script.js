@@ -30,3 +30,8 @@ var setUpHourBlock = function (hourBlock) {
 
     var saveButton = hourBlock.querySelector(".saveBtn")
     console.log(saveButton)
+
+     // get tasks from local storage
+     var saveTasks = localStorage.getItem(hourId)
+     console.log(saveTasks)
+     textInputArea.value = saveTasks
