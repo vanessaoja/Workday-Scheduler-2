@@ -44,3 +44,7 @@ var setUpHourBlock = function (hourBlock) {
 
     })
 }
+
+// looping through the hour blocks by selecting the class="row" attribute and calling setUpHourBlock function
+document.querySelectorAll(".row").forEach(setUpHourBlock)
+
