@@ -27,3 +27,6 @@ var setUpHourBlock = function (hourBlock) {
         
         textInputArea.classList.add('future');
     }
+
+    var saveButton = hourBlock.querySelector(".saveBtn")
+    console.log(saveButton)
