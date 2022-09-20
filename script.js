@@ -35,3 +35,12 @@ var setUpHourBlock = function (hourBlock) {
      var saveTasks = localStorage.getItem(hourId)
      console.log(saveTasks)
      textInputArea.value = saveTasks
+
+      // save tasks to local storage
+    saveButton.addEventListener("click", function () {
+        let taskInput = textInputArea.value;
+        console.log(taskInput)
+        localStorage.setItem(hourId, (taskInput));
+
+    })
+}
